@@ -6,10 +6,10 @@ class VibeCode < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/trevhud/vibe-code/releases/download/v1.0.0-test/vibe-code-macos-arm64.tar.gz"
-      sha256 "abb9b594b78e4a1e40485feea8a89c0b067cad376c8a9a939525ab5189a0adc5"
+      sha256 "9a953e01d3789e4d22955bc00efb1ca145346d82c84887353183a4cf345add4d"
     else
       url "https://github.com/trevhud/vibe-code/releases/download/v1.0.0-test/vibe-code-macos-x64.tar.gz"
-      sha256 "dedc459863fea655068878f69d287a4c6b479b04bd4160823a35c3343b24a54d"
+      sha256 "54345c3595eee91aa5e3a2959d908d18b0e39bc0d07dcd799cbe411978a1be57"
     end
   end
 
