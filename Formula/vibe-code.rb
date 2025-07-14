@@ -1,15 +1,15 @@
 class VibeCode < Formula
   desc "Seamlessly continue Claude Code conversations on your iPhone"
   homepage "https://github.com/trevhud/vibe-code"
-  version "1.0.1"
+  version "1.0.2"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/trevhud/homebrew-vibe-code/raw/main/v1.0.1/vibe-code-macos-arm64.tar.gz"
-      sha256 "564941ab36a92554178fa5629de31f1022cc60e5b5d95350da6257cfdf7eb196"
+      url "https://github.com/trevhud/homebrew-vibe-code/raw/main/v1.0.2/vibe-code-macos-arm64.tar.gz"
+      sha256 "f0f27464235319520ba9bf575c3895ccad409859329f35d3ae9df59402362ac3"
     else
-      url "https://github.com/trevhud/homebrew-vibe-code/raw/main/v1.0.1/vibe-code-macos-x64.tar.gz"
-      sha256 "9d7bb551bdb32314aa67061c363f5e1392414c5a48e20e18bd6fd6bf8662b925"
+      url "https://github.com/trevhud/homebrew-vibe-code/raw/main/v1.0.2/vibe-code-macos-x64.tar.gz"
+      sha256 "a74db5a3ac4413a7d84c0755596ecf2ae95b4298627a8acae03943d0654facc2"
     end
   end
 
