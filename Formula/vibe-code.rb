@@ -2,6 +2,7 @@ class VibeCode < Formula
   desc "Seamlessly continue Claude Code conversations on your iPhone"
   homepage "https://github.com/trevhud/vibe-code"
   version "1.0.2"
+  revision 1
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -13,7 +14,10 @@ class VibeCode < Formula
     end
   end
 
-  depends_on "tailscale"
+  # Tailscale is not a formula dependency: `vibe-code setup` uses whichever
+  # tailscale is on PATH and installs one only when none is found. Depending on
+  # the Homebrew formula forced a second, stale copy onto machines that run the
+  # standalone or App Store Tailscale app.
   depends_on "tmux"
 
   def install
